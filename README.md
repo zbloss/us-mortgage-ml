@@ -21,6 +21,9 @@ All Visualizations have been exported to the /plots/ directory
 3. BostonHousingDistPlot
   - a distribution plot using Seaborn of the Median House Value
 
+### Evaluation ###
+The Mean Squared Error & Root Mean Squared Error are printed to /data/evals.txt
+
 ### DATASET DESCRIPTION ###
 Boston House Prices dataset
 ===========================

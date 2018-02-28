@@ -109,5 +109,12 @@ savefig(plots_path + 'ActualVPredMEDV.png')
 
 ### Calculating MSE ###
 
+f = open(data_path + "evals.txt", "w")
+
+
+
 MSE = mean_squared_error(y_test, preds)
-print(MSE)
+RMSE = np.sqrt(mean_squared_error(y_test, preds))
+print("The MSE is {} \nThe RMSE is {}".format(MSE, RMSE))
+f.write("The MSE is {} \nThe RMSE is {}".format(MSE, RMSE))
+f.close()
